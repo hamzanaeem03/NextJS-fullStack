@@ -168,7 +168,12 @@ const DoctorSection = ({ isHome }) => {
             </div>
           </div> */}
           {filtered.map((doctor) => (
-            <Card key={doctor.name} className="p-2 flex items-center m-2 lg:w-[23%]">
+            <Card
+              key={doctor.name}
+              className="p-2 m-2 lg:w-[23%]"
+            >
+              <div className="flex ml-4 items-center">
+
               <Avatar>
                 <AvatarImage src="https://github.com/shadcn.png" />
                 <AvatarFallback>CN</AvatarFallback>
@@ -177,6 +182,14 @@ const DoctorSection = ({ isHome }) => {
                 <CardTitle>{doctor.name}</CardTitle>
                 <CardDescription>{doctor.category}</CardDescription>
               </CardHeader>
+              </div>
+
+
+              {!isHome && (
+                <CardContent>
+                  <p>Card Content</p>
+                </CardContent>
+              )}
             </Card>
           ))}
         </div>
