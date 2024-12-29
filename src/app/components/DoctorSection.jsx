@@ -21,7 +21,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useState } from "react";
-import { BookingDialog } from "./bookingdialog";
+import { BookingDialog } from "./BookingDialog";
 
 const DoctorSection = ({ isHome }) => {
   const [selectedSpecialty, setSelectedSpecialty] = useState(''); // Track selected specialty
