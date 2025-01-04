@@ -38,7 +38,7 @@ export function BookingDialog() {
       <DialogTrigger asChild>
         <Button variant="outline">Book Appiontment</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+         <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Book Appiontment</DialogTitle>
           <DialogDescription>
@@ -47,6 +47,8 @@ export function BookingDialog() {
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
+
+            
             <Label htmlFor="name" className="text-right">
             Patient Name
             </Label>
